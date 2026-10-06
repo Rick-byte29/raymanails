@@ -1,0 +1,81 @@
+{
+  "photos": [
+    {
+      "name": "bridal-french",
+      "error": "HTTP Error 403: Forbidden",
+      "url": "https://www.datocms-assets.com/44039/1690188594-1689780693-wedding-nails-for-bride-chrome-french.jpeg"
+    },
+    {
+      "name": "french-chrome",
+      "url": "https://i.pinimg.com/736x/52/ad/9e/52ad9e5d32912daa4cbad3aa0935251a.jpg",
+      "path": "/workspace/scratch/nail-assets/french-chrome.jpg",
+      "bytes": 57260
+    },
+    {
+      "name": "floral-chrome",
+      "url": "https://i.pinimg.com/736x/96/08/68/96086838e18e0735c1b8948753e951e0.jpg",
+      "path": "/workspace/scratch/nail-assets/floral-chrome.jpg",
+      "bytes": 65961
+    },
+    {
+      "name": "floral-gel",
+      "url": "https://i.pinimg.com/originals/8d/5b/b6/8d5bb6c39fd6ddb2fde6b2d67e30cff4.jpg",
+      "path": "/workspace/scratch/nail-assets/floral-gel.jpg",
+      "bytes": 211939
+    },
+    {
+      "name": "nude-minimal",
+      "url": "https://images.ctfassets.net/daem4o9l2hfd/ma-265aa5e6-87f9-4e67-9270-c0c64843b38d-mobile/df32325fdae6cd5d7533e52b983253c6/clean-girl-nails-thumbnail.jpg",
+      "path": "/workspace/scratch/nail-assets/nude-minimal.jpg",
+      "bytes": 30937
+    },
+    {
+      "name": "pink-chrome",
+      "error": "HTTP Error 460: <none>",
+      "url": "https://www.instyle.com/thmb/Kf4JRCAereGgXOl838E3DNVtC2I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/490764526_18312869431225499_1529576375267049926_n-09885076ba21474d8788e5e523e1201d.jpeg"
+    },
+    {
+      "name": "pink-cateye",
+      "error": "HTTP Error 460: <none>",
+      "url": "https://www.instyle.com/thmb/oKSOhDXqYsmo8fl0wxAthpoRRtg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/InStylePinkChromeNailDesignIdeasCatEye-7e019d52187747219c1a0e9f6e80ec60.jpg"
+    },
+    {
+      "name": "pearl-art",
+      "error": "HTTP Error 460: <none>",
+      "url": "https://www.instyle.com/thmb/WYaoofpoK8KllmwHwyq5hhWKk7s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/474006638_1079513724188145_6982140174440864524_n-b19b6378bdf043eda65cad65e0d31e54.jpeg"
+    },
+    {
+      "name": "bridal-glaze",
+      "url": "https://media-api.xogrp.com/images/53a6e400-8ccf-4c40-ae52-ce9b60f4a8c7",
+      "path": "/workspace/scratch/nail-assets/bridal-glaze.jpg",
+      "bytes": 200642,
+      "source": "https://www.theknot.com/content/white-wedding-nails"
+    },
+    {
+      "name": "bridal-pearl",
+      "url": "https://media-api.xogrp.com/images/15bb612b-0c19-4431-bedd-fbee6c3f0286",
+      "path": "/workspace/scratch/nail-assets/bridal-pearl.jpg",
+      "bytes": 96248,
+      "source": "https://www.theknot.com/content/white-wedding-nails"
+    },
+    {
+      "name": "bridal-french",
+      "url": "https://media-api.xogrp.com/images/db037c64-9a3e-45b8-8929-f8fe9d3b0395",
+      "path": "/workspace/scratch/nail-assets/bridal-french.jpg",
+      "bytes": 631445,
+      "source": "https://www.theknot.com/content/white-wedding-nails"
+    },
+    {
+      "name": "pink-floral",
+      "url": "https://media-api.xogrp.com/images/a178bf25-411b-414a-88e0-05a73509c846",
+      "path": "/workspace/scratch/nail-assets/pink-floral.jpg",
+      "bytes": 734934,
+      "source": "https://www.theknot.com/content/white-wedding-nails"
+    }
+  ],
+  "video": {
+    "source": "https://www.manucurist.com/pt/blogs/journal/les-secrets-de-la-manucure-japonaise",
+    "url": "https://cdn.shopify.com/videos/c/o/v/fe7bc07883704667a5de389dd750633d.mp4",
+    "processing": "Silent 12-second loop with a 1-second crossfade."
+  }
+}
