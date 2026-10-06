@@ -1,23 +1,44 @@
 # Nails By Rayma
 
-Luxury five-page nail studio application with responsive layouts, a three-second loading screen, video hero, pricing calculator, filtered lookbook, multi-step appointment requests, and WhatsApp enquiries (+91 9101035255).
+A five-page luxury nail studio application built with Next.js 16, React 19, TypeScript, Tailwind CSS, GSAP and Radix UI.
 
-## Stack
-React 19, TypeScript, Tailwind CSS, GSAP, Radix UI, and Vinext. Hosted on Cloudflare Workers through ChatGPT Sites, with D1 for appointment, contact and newsletter requests.
+Includes the three-second arrival screen, video hero, responsive pricing, a filterable lookbook, four-step appointment form, working mobile menu and WhatsApp enquiries at +91 9101035255.
 
-## Development
-Use Node.js 22.13 or later and pnpm. Run `pnpm install`, then `pnpm dev`. Generate schema migrations with `pnpm db:generate`, and build with `pnpm build`.
+## Run locally
 
-The project uses Cloudflare runtime bindings. Provision a D1 binding named `DB` and apply the checked-in Drizzle migrations when deploying outside Sites. This is a Worker application; it needs runtime adaptation before deploying to a different host such as Vercel.
+Use Node.js 22.13+ and pnpm:
 
-## Content
-Studio address, Instagram handle and confirmed rates still need updating. Testimonials are labelled as samples. Appointment submissions are requests, not confirmed reservations. Email/SMS notifications are not connected.
+```
+pnpm install
+pnpm dev
+```
+
+For a production build, run `pnpm build`, then `pnpm start`.
+
+## Deploy to Vercel
+
+Import this repository using the **Next.js** framework preset. Root directory: repository root. Build command: `pnpm build`. Leave the output directory at the default `.next`. `vercel.json` supplies the build settings.
+
+This version uses standard `next build --webpack`, producing `.next/routes-manifest.json` and Vercel-compatible output. The earlier Cloudflare/Vinext build remains in the original ChatGPT Site; it is no longer the default build in this GitHub repository.
+
+## Appointment and contact requests
+
+Without database credentials, validated requests prepare a WhatsApp message for the visitor to send to the studio. The UI does not claim the request was saved or sent until the relevant action is completed. Availability and final pricing require studio confirmation.
+
+Optional durable storage uses the Cloudflare D1 REST API. Configure these server-only environment variables in Vercel:
+
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_D1_DATABASE_ID`
+- `CLOUDFLARE_D1_API_TOKEN` (restricted to D1 access for the intended account)
+
+Apply the checked-in `drizzle/*.sql` migrations to that D1 database. With storage connected, appointment/contact/newsletter requests are saved. Without it, newsletter signup reports that it is not connected. No API credentials are committed or sent to the browser. Do not configure these variables with a `NEXT_PUBLIC_` prefix.
 
 ## Pages
+
 - `/index.html`: Home
 - `/services.html`: Services and pricing
 - `/gallery.html`: Lookbook
 - `/booking.html`: Appointment requests
 - `/about.html`: Story and contact
 
-Photo and video source records are in `asset-sources.json`.
+Studio address, Instagram handle and confirmed rates still need updating. Testimonials are labelled as samples. Email/SMS notifications are not connected. Photo and video source records are in `asset-sources.json`.
